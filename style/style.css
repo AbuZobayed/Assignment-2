@@ -245,23 +245,39 @@ nav {
 }
 
 /* Address section */
-.Address-section{
+.Address-section {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto;
 }
-.Address-section img{
+
+.address-detail p {
+    line-height: 1.7;
+}
+
+.img-section img {
     width: 400px;
     height: 400ppx;
     border-radius: 10px;
 
 }
-.address-detail h1{
-        font-size: 50px;
+
+.address-detail h1 {
+    font-size: 30px;
+    line-height: 1.7;
 }
-.address-detail img{
-    
-            width: 15px;
-            height: 15px;
+
+.address-detail img {
+
+    width: 15px;
+    height: 15px;
+}
+
+.iframe {
+    width: 100px;
+    height: 100px;
 }
 
 /*_________________Main Section end Now__________________*/
@@ -316,16 +332,66 @@ nav {
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 960px) {
+    .popular-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .navigation {
+        display: none;
+    }
+
+    .nav-logo h2 {
+
+        padding-left: 300px;
+    }
+}
 
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .banner-section {
+        flex-direction: column;
+        text-align: center;
+    }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+    .banner_info {
+        width: 90%;
+        padding: 0px;
+    }
+
+    .banner_info {
+        width: 90%;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+
+    .banner-image {
+        width: 90%;
+    }
+
+    .Address-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .popular-products {
         grid-template-columns: repeat(1, 1fr);
+        width: 50%;
     }
+
+    .ecommerce-logo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-logo h2 {
+
+        padding-left: 100px;
+    }
+
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
