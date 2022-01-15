@@ -244,6 +244,25 @@ nav {
     padding-left: 5px;
 }
 
+/* Address section */
+.Address-section{
+    display: flex;
+    justify-content: space-evenly
+}
+.Address-section img{
+    width: 400px;
+    height: 400ppx;
+    border-radius: 10px;
+
+}
+.address-detail h1{
+        font-size: 50px;
+}
+.address-detail img{
+    
+            width: 15px;
+            height: 15px;
+}
 
 /*_________________Main Section end Now__________________*/
 
